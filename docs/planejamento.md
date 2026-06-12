@@ -107,6 +107,7 @@ Antes de escrever código, escreva em tópicos simples o que o sistema deve faze
 - O usuário pode "adquirir" um software (adicionar à sua biblioteca).
 - O usuário pode clicar em "Instalar" (mudar o status para instalado).
 - O usuário pode ver a lista apenas dos softwares que ele já tem instalados.
+- O usuário pode enviar um software para o catálogo
 
 # 2. Mapear os Relacionamentos no UML
 
@@ -120,7 +121,27 @@ Pense em como as classes conversam entre si usando os conceitos de POO:
 
 - Desenvolver interface usando o terminal (modo texto) 
 - Planeje o menu principal:
+
+1. Cadastrar Novo Usuario
+    (Novo Usuario)
+    1. Cadastrar
+    0. Voltar
+
+2. Fazer Login
+    (Usuario Logado)
     1. Ver Catálogo de Softwares
     2. Minha Biblioteca
     3. Gerenciar Downloads
-    4. Sair
+    4. Voltar
+
+0. Sair
+
+(Novo Usuario)
+1. Cadastrar
+0. Voltar
+
+(Usuario Logado)
+1. Ver Catálogo de Softwares
+2. Minha Biblioteca
+3. Gerenciar Downloads
+4. Sair
